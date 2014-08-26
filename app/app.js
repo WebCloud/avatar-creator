@@ -6,7 +6,8 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 
 var App = Ember.Application.extend({
   modulePrefix: 'avatar-creator', // TODO: loaded via config
-  Resolver: Resolver
+  Resolver: Resolver,
+  rootElement: 'body'
 });
 
 loadInitializers(App, 'avatar-creator');

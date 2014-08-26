@@ -1,0 +1,18 @@
+<h3>My groups</h3>
+<ul>
+  {{#each groups}}
+    <li>{{description}}</li>
+  {{/each}}
+</ul>
+
+<h3>My avatar image is:</h3>
+<p><b>"{{model.mappedImage}}"</b></p>
+
+<h3>My avatar is made of the following parts</h3>
+<ul>
+  {{#each model.parts}}
+    <li>{{description}} of type {{type.description}}</li>
+  {{/each}}
+</ul>
+
+{{yield}}

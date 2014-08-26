@@ -5,6 +5,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('users', function(){
+    this.route('avatar', {path:'/avatar/:user_id'});
+    this.route('avatarerror');
+  });
 });
 
 export default Router;
